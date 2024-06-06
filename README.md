@@ -13,6 +13,14 @@ source install/setup.bash
 To view the robot in Rviz:
 ```
 ros2 launch fanuc_m710ic_support view_robot.launch.py
+```
+
+Once Rviz Open, follow the below steps:
+1. Sep Map to base_link in the Global Options
+2. Add Robot Model
+3. Under Robot Model, set description to /robot_description
+4. Then in another terminal, run  the below command
+```
 ros2 run fanuc_m710ic_support publish_joint_states
 ```
 
