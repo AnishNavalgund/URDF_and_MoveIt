@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>fanuc_m710ic_support</name>
+  <version>0.0.0</version>
+  <description>Support package for Fanuc M-710iC robots</description>
+  <maintainer email="st157476@stud.uni-stuttgart.de">administrator</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- Runtime dependencies -->
+  <depend>rclpy</depend>  <!-- Ensure Python client library is available -->
+  <depend>robot_state_publisher</depend>  <!-- For publishing state transformations -->
+  <depend>rviz2</depend>  <!-- For visualization with RViz -->
+  <depend>xacro</depend>  <!-- For processing Xacro files -->
+
+  <!-- Build and test dependencies -->
+  <build_depend>ament_cmake</build_depend>  <!-- Build system -->
+  <test_depend>ament_lint_auto</test_depend>  <!-- Linters -->
+  <test_depend>ament_lint_common</test_depend>  <!-- Common linting tools -->
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
+
